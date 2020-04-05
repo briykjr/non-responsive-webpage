@@ -1,0 +1,248 @@
+/* override default styles*/
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body, ul, li{
+    margin: 0;
+    padding: 0;
+}
+p, h1, h2, h3{
+    color: #4e4e4e;
+}
+body{
+    background-color: #f7f7f7;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 96%;
+    max-width: 1200px;
+    padding: 0 2%;
+}
+header{
+    background-color: #e5e5e5;
+}
+header .logo{
+    margin: 0;
+    font-size: 2em;
+    font-weight: 600;
+    padding: 20px 0;
+    float: left;
+}
+header nav{
+    float: right;
+}
+header nav::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+nav li{
+    list-style-type: none;
+    float: left;
+    margin-left: 20px;
+    margin-top: 30px;
+}
+nav li a{
+    text-decoration: none;
+    color: #4e4e4e;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+nav a.active{
+    color: #1abbcc;
+}
+#main-banner img{
+    width: 100%;
+    display: block;
+}
+#main-banner{
+    width: 100%;
+    max-height: 500px;
+    overflow: hidden;
+}
+#selling-points{
+    margin-top: 60px;
+}
+#selling-points li{
+    list-style-type: none;
+    float: left;
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+    line-height: 1.7;
+}
+#selling-points li::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+#selling-points li h3{
+    margin: 5px;
+}
+.clearfix{
+    clear: both;
+}
+#our_work{
+    margin-top: 50px;
+    border-top: 2px solid #e5e5e5;
+}
+#our_work li{
+    list-style-type: none;
+    width: 30%;
+    float: left;
+    padding: 1%;
+}
+#our_work li img{
+    width: 100%;
+}
+#our_work li h3{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.tags{
+    margin-top: 5px;
+    color: #bbb;
+    font-size: 14px;
+}
+#our_work li p{
+    line-height: 1.5;
+}
+#qoute{
+    background-color: #efefef;
+    text-align: center;
+    margin: 30px 0;
+    padding: 40px 60px;
+    font-size: 1.5rem;
+}
+footer{
+    background-color: #202020;
+    border-top: 8px solid #111111;
+    padding: 30px 10px;
+}
+footer h3{
+    color: #555;
+    text-transform: uppercase;
+    font-size: 18px;
+    margin: 0;
+    padding: 10px 0;
+}
+footer ul{
+    width: 25%;
+    float: left;
+    list-style: none;
+}
+footer ul li{
+    width: 80%;
+    margin: 15px 0;
+    color: #efefef;
+    line-height: 1.5;
+}
+footer ul li.twitter{
+    padding-left: 20px;
+    background: url(../img/tweet.png) no-repeat left 6px;
+}
+#copyright{
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.25rem;
+    border-top: 1px solid #e5e5e5 ;
+    padding-top: 20px;
+    margin-bottom: 0;
+    color: #e5e5e5;
+}
+/* Responsive Design*/
+@media screen and (max-width: 960px){
+    #selling-points li{
+        width: 46%;
+        margin: 20px 0;
+        padding: 0 1%;
+    }
+    footer ul{
+        width: 50%;
+    }
+    footer ul:nth-child(odd){
+        clear: both;
+    }
+}
+@media screen and (max-width: 768px){
+    header nav{
+        float: none;
+    }
+    header nav li{
+        margin-left: 0;
+        width: 15.5%;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 0;
+        padding-bottom: 10px;
+    }
+    header h2.logo{
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #our_work li{
+        width: 60%;
+        margin: 20px 20%;
+    }
+    #our_work h2{
+        text-align: center;
+        margin-top: 30px !important;
+    }
+}
+@media screen and (max-width: 480px){
+    #selling-points li{
+        width: 80%;
+        margin: 20px 0;
+        padding: 0 10%;
+    }
+    #our_work li{
+        width: 80%;
+        margin: 20px 10%;
+    }
+    #qoute{
+        margin: 30px 0;
+        padding: 40px 60px;
+        font-size: 1rem;
+        font-weight: 700;
+    }
+    footer ul{
+        width: 100%;
+        float: none;
+    }
+    header nav li{
+        float: none;
+        width: 100%;
+        padding: 0;
+    }
+    /* add burger button*/
+    header nav{
+        background-color:#555;
+    }
+    header .wrapper{
+        width: 100%;
+        padding: 0;
+    }
+    header nav li a{
+        display: block;
+        text-align: center;
+        color: #e5e5e5;
+        padding: 10px 0;
+        cursor: pointer;
+        border-top: 1px solid #4e4e4e;
+    }
+    .burger-nav{
+        width: 100%;
+        height: 40px;
+        background: url(../img/burger.png) no-repeat 98% center;
+        cursor: pointer;
+    }
+    header nav ul{
+        height: 0;
+        overflow: hidden;
+    }
+    header nav ul.open{
+        height: auto;
+    }
+}
+
